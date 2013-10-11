@@ -1,0 +1,24 @@
+C:\Users\GaryNg\AppData\Local\Temporary Projects\SyntaxHighlighter\bin\Debug\SyntaxHighlighter.exe
+C:\Users\GaryNg\AppData\Local\Temporary Projects\SyntaxHighlighter\bin\Debug\SyntaxHighlighter.pdb
+C:\Users\GaryNg\AppData\Local\Temporary Projects\SyntaxHighlighter\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\GaryNg\AppData\Local\Temporary Projects\SyntaxHighlighter\obj\x86\Debug\SyntaxHighlighter.frmMain.resources
+C:\Users\GaryNg\AppData\Local\Temporary Projects\SyntaxHighlighter\obj\x86\Debug\SyntaxHighlighter.Properties.Resources.resources
+C:\Users\GaryNg\AppData\Local\Temporary Projects\SyntaxHighlighter\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\GaryNg\AppData\Local\Temporary Projects\SyntaxHighlighter\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\GaryNg\AppData\Local\Temporary Projects\SyntaxHighlighter\obj\x86\Debug\SyntaxHighlighter.exe
+C:\Users\GaryNg\AppData\Local\Temporary Projects\SyntaxHighlighter\obj\x86\Debug\SyntaxHighlighter.pdb
+F:\Users\GaryNg-Win7\Desktop\SyntaxHighlighter\SyntaxHighlighter\obj\x86\Debug\SyntaxHighlighter.exe
+F:\Users\GaryNg-Win7\Desktop\SyntaxHighlighter\SyntaxHighlighter\obj\x86\Debug\SyntaxHighlighter.pdb
+F:\Users\GaryNg-Win7\Desktop\SyntaxHighlighter\SyntaxHighlighter\bin\Debug\SyntaxHighlighter.exe.config
+F:\Users\GaryNg-Win7\Desktop\SyntaxHighlighter\SyntaxHighlighter\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\Users\GaryNg-Win7\Desktop\SyntaxHighlighter\SyntaxHighlighter\obj\x86\Debug\SyntaxHighlighter.frmMain.resources
+F:\Users\GaryNg-Win7\Desktop\SyntaxHighlighter\SyntaxHighlighter\obj\x86\Debug\SyntaxHighlighter.Properties.Resources.resources
+F:\Users\GaryNg-Win7\Desktop\SyntaxHighlighter\SyntaxHighlighter\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+F:\Users\GaryNg-Win7\Desktop\SyntaxHighlighter\SyntaxHighlighter\obj\x86\Debug\GenerateResource.read.1.tlog
+F:\Users\GaryNg-Win7\Desktop\SyntaxHighlighter\SyntaxHighlighter\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+F:\Users\GaryNg-Win7\Desktop\SyntaxHighlighter\SyntaxHighlighter\obj\x86\Debug\GenerateResource.write.1.tlog
+F:\Users\GaryNg-Win7\Desktop\SyntaxHighlighter\SyntaxHighlighter\bin\Debug\SyntaxHighlighter.exe
+F:\Users\GaryNg-Win7\Desktop\SyntaxHighlighter\SyntaxHighlighter\bin\Debug\SyntaxHighlighter.pdb
+D:\Users\GaryNg-Win7\Desktop\SyntaxHighlighter\SyntaxHighlighter\bin\Debug\SyntaxHighlighter.exe.config
+D:\Users\GaryNg-Win7\Desktop\SyntaxHighlighter\SyntaxHighlighter\obj\x86\Debug\SyntaxHighlighter.exe
+D:\Users\GaryNg-Win7\Desktop\SyntaxHighlighter\SyntaxHighlighter\obj\x86\Debug\SyntaxHighlighter.pdb
