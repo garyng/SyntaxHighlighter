@@ -32,6 +32,7 @@
             this.txtSource = new System.Windows.Forms.TextBox();
             this.lblPasteCode = new System.Windows.Forms.Label();
             this.pnlCon = new System.Windows.Forms.Panel();
+            this.chkAutoCopy = new System.Windows.Forms.CheckBox();
             this.cbIsDynamic = new System.Windows.Forms.CheckBox();
             this.btnCopy = new System.Windows.Forms.Button();
             this.txtCode = new System.Windows.Forms.TextBox();
@@ -43,7 +44,7 @@
             this.lblLanguage = new System.Windows.Forms.Label();
             this.txtSH = new System.Windows.Forms.TextBox();
             this.txtGN = new System.Windows.Forms.TextBox();
-            this.chkAuto = new System.Windows.Forms.CheckBox();
+            this.btnPaste = new System.Windows.Forms.Button();
             this.pnlCon.SuspendLayout();
             this.gbCodeClass.SuspendLayout();
             this.SuspendLayout();
@@ -80,7 +81,8 @@
             // 
             // pnlCon
             // 
-            this.pnlCon.Controls.Add(this.chkAuto);
+            this.pnlCon.Controls.Add(this.btnPaste);
+            this.pnlCon.Controls.Add(this.chkAutoCopy);
             this.pnlCon.Controls.Add(this.cbIsDynamic);
             this.pnlCon.Controls.Add(this.btnCopy);
             this.pnlCon.Controls.Add(this.txtCode);
@@ -93,13 +95,25 @@
             this.pnlCon.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlCon.Location = new System.Drawing.Point(0, 86);
             this.pnlCon.Name = "pnlCon";
-            this.pnlCon.Size = new System.Drawing.Size(826, 351);
+            this.pnlCon.Size = new System.Drawing.Size(826, 317);
             this.pnlCon.TabIndex = 2;
+            // 
+            // chkAutoCopy
+            // 
+            this.chkAutoCopy.AutoSize = true;
+            this.chkAutoCopy.Checked = true;
+            this.chkAutoCopy.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkAutoCopy.Location = new System.Drawing.Point(143, 221);
+            this.chkAutoCopy.Name = "chkAutoCopy";
+            this.chkAutoCopy.Size = new System.Drawing.Size(148, 17);
+            this.chkAutoCopy.TabIndex = 10;
+            this.chkAutoCopy.Text = "Auto Copy to Clipboard";
+            this.chkAutoCopy.UseVisualStyleBackColor = true;
             // 
             // cbIsDynamic
             // 
             this.cbIsDynamic.AutoSize = true;
-            this.cbIsDynamic.Location = new System.Drawing.Point(12, 267);
+            this.cbIsDynamic.Location = new System.Drawing.Point(143, 198);
             this.cbIsDynamic.Name = "cbIsDynamic";
             this.cbIsDynamic.Size = new System.Drawing.Size(169, 17);
             this.cbIsDynamic.TabIndex = 6;
@@ -108,7 +122,7 @@
             // 
             // btnCopy
             // 
-            this.btnCopy.Location = new System.Drawing.Point(427, 290);
+            this.btnCopy.Location = new System.Drawing.Point(427, 267);
             this.btnCopy.Name = "btnCopy";
             this.btnCopy.Size = new System.Drawing.Size(385, 40);
             this.btnCopy.TabIndex = 8;
@@ -123,14 +137,14 @@
             this.txtCode.Name = "txtCode";
             this.txtCode.ReadOnly = true;
             this.txtCode.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtCode.Size = new System.Drawing.Size(385, 276);
+            this.txtCode.Size = new System.Drawing.Size(385, 253);
             this.txtCode.TabIndex = 9;
             // 
             // btnGen
             // 
-            this.btnGen.Location = new System.Drawing.Point(12, 290);
+            this.btnGen.Location = new System.Drawing.Point(6, 267);
             this.btnGen.Name = "btnGen";
-            this.btnGen.Size = new System.Drawing.Size(394, 40);
+            this.btnGen.Size = new System.Drawing.Size(190, 40);
             this.btnGen.TabIndex = 7;
             this.btnGen.Text = "Generate";
             this.btnGen.UseVisualStyleBackColor = true;
@@ -142,7 +156,7 @@
             this.gbCodeClass.Controls.Add(this.rbCDATA);
             this.gbCodeClass.Location = new System.Drawing.Point(6, 189);
             this.gbCodeClass.Name = "gbCodeClass";
-            this.gbCodeClass.Size = new System.Drawing.Size(400, 72);
+            this.gbCodeClass.Size = new System.Drawing.Size(131, 72);
             this.gbCodeClass.TabIndex = 4;
             this.gbCodeClass.TabStop = false;
             // 
@@ -232,23 +246,21 @@
             this.txtGN.TabIndex = 12;
             this.txtGN.Text = "http://garyngzhongbo.blogspot.com/";
             // 
-            // chkAuto
+            // btnPaste
             // 
-            this.chkAuto.AutoSize = true;
-            this.chkAuto.Checked = true;
-            this.chkAuto.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkAuto.Location = new System.Drawing.Point(187, 267);
-            this.chkAuto.Name = "chkAuto";
-            this.chkAuto.Size = new System.Drawing.Size(148, 17);
-            this.chkAuto.TabIndex = 10;
-            this.chkAuto.Text = "Auto Copy to Clipboard";
-            this.chkAuto.UseVisualStyleBackColor = true;
+            this.btnPaste.Location = new System.Drawing.Point(202, 267);
+            this.btnPaste.Name = "btnPaste";
+            this.btnPaste.Size = new System.Drawing.Size(204, 40);
+            this.btnPaste.TabIndex = 12;
+            this.btnPaste.Text = "Paste and Generate";
+            this.btnPaste.UseVisualStyleBackColor = true;
+            this.btnPaste.Click += new System.EventHandler(this.btnPaste_Click);
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(826, 437);
+            this.ClientSize = new System.Drawing.Size(826, 403);
             this.Controls.Add(this.txtGN);
             this.Controls.Add(this.txtSH);
             this.Controls.Add(this.pnlCon);
@@ -285,7 +297,8 @@
         private System.Windows.Forms.CheckBox cbIsDynamic;
         private System.Windows.Forms.TextBox txtSH;
         private System.Windows.Forms.TextBox txtGN;
-        private System.Windows.Forms.CheckBox chkAuto;
+        private System.Windows.Forms.CheckBox chkAutoCopy;
+        private System.Windows.Forms.Button btnPaste;
     }
 }
 

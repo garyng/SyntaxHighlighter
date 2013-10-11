@@ -66,11 +66,10 @@ namespace SyntaxHighlighter
                 str += Environment.NewLine + "<script type=\"text/javascript\">" + Environment.NewLine + "SyntaxHighlighter.highlight();" + Environment.NewLine + "</script>";
             }
             txtCode.Text = str;
-            if (chkAuto.Checked)
+            if (chkAutoCopy.Checked)
             {
                 btnCopy_Click(this, new EventArgs());
             }
-
         }
 
         private void btnCopy_Click(object sender, EventArgs e)
@@ -78,6 +77,12 @@ namespace SyntaxHighlighter
             Clipboard.Clear();
             Clipboard.SetText(txtCode.Text==""?" ":txtCode.Text);
             //MessageBox.Show("Copied");
+        }
+
+        private void btnPaste_Click(object sender, EventArgs e)
+        {
+            txtSource.Text = Clipboard.GetText();
+            btnGen_Click(this,new EventArgs());
         }
 
     }
