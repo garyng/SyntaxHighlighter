@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
-using System.Drawing;
-using System.Threading;
-
+using System.Web;
 namespace SyntaxHighlighter
 {
     public partial class frmMain : Form
@@ -53,8 +51,8 @@ namespace SyntaxHighlighter
         private void btnGen_Click(object sender, EventArgs e)
         {
             string str = "";
-           
 
+            txtSource.Text = HttpUtility.HtmlEncode(txtSource.Text);
             if (rbCDATA.Checked)
             {
                 str = "<script type=\"syntaxhighlighter\" class=\"brush: " + m_strLang[m_iSelected] + "\"><![CDATA[" + Environment.NewLine + txtSource.Text + Environment.NewLine + "]]></script>" + Environment.NewLine;
