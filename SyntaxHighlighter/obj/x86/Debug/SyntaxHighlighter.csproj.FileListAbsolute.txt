@@ -22,3 +22,9 @@ F:\Users\GaryNg-Win7\Desktop\SyntaxHighlighter\SyntaxHighlighter\bin\Debug\Synta
 D:\Users\GaryNg-Win7\Desktop\SyntaxHighlighter\SyntaxHighlighter\bin\Debug\SyntaxHighlighter.exe.config
 D:\Users\GaryNg-Win7\Desktop\SyntaxHighlighter\SyntaxHighlighter\obj\x86\Debug\SyntaxHighlighter.exe
 D:\Users\GaryNg-Win7\Desktop\SyntaxHighlighter\SyntaxHighlighter\obj\x86\Debug\SyntaxHighlighter.pdb
+D:\Users\GaryNg-Win7\Desktop\SyntaxHighlighter\SyntaxHighlighter\bin\Debug\SyntaxHighlighter.exe
+D:\Users\GaryNg-Win7\Desktop\SyntaxHighlighter\SyntaxHighlighter\bin\Debug\SyntaxHighlighter.pdb
+D:\Users\GaryNg-Win7\Desktop\SyntaxHighlighter\SyntaxHighlighter\obj\x86\Debug\SyntaxHighlighter.csprojResolveAssemblyReference.cache
+D:\Users\GaryNg-Win7\Desktop\SyntaxHighlighter\SyntaxHighlighter\obj\x86\Debug\SyntaxHighlighter.frmMain.resources
+D:\Users\GaryNg-Win7\Desktop\SyntaxHighlighter\SyntaxHighlighter\obj\x86\Debug\SyntaxHighlighter.Properties.Resources.resources
+D:\Users\GaryNg-Win7\Desktop\SyntaxHighlighter\SyntaxHighlighter\obj\x86\Debug\SyntaxHighlighter.csproj.GenerateResource.Cache

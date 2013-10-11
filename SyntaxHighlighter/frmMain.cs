@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
+using System.Drawing;
+using System.Threading;
 
 namespace SyntaxHighlighter
 {
@@ -41,9 +43,8 @@ namespace SyntaxHighlighter
         {
             cbLanguage.SelectedIndex = 3;
             m_iSelected = 3;
-
+           
         }
-
         private void cbLanguage_SelectedIndexChanged(object sender, EventArgs e)
         {
             m_iSelected = ((ComboBox)sender).SelectedIndex;
@@ -52,8 +53,7 @@ namespace SyntaxHighlighter
         private void btnGen_Click(object sender, EventArgs e)
         {
             string str = "";
-
-            
+           
 
             if (rbCDATA.Checked)
             {
@@ -68,13 +68,18 @@ namespace SyntaxHighlighter
                 str += Environment.NewLine + "<script type=\"text/javascript\">" + Environment.NewLine + "SyntaxHighlighter.highlight();" + Environment.NewLine + "</script>";
             }
             txtCode.Text = str;
+            if (chkAuto.Checked)
+            {
+                btnCopy_Click(this, new EventArgs());
+            }
+
         }
 
         private void btnCopy_Click(object sender, EventArgs e)
         {
             Clipboard.Clear();
-            Clipboard.SetText(txtCode.Text);
-            MessageBox.Show("Copied");
+            Clipboard.SetText(txtCode.Text==""?" ":txtCode.Text);
+            //MessageBox.Show("Copied");
         }
 
     }

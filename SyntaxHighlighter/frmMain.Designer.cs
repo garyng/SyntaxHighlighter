@@ -43,6 +43,7 @@
             this.lblLanguage = new System.Windows.Forms.Label();
             this.txtSH = new System.Windows.Forms.TextBox();
             this.txtGN = new System.Windows.Forms.TextBox();
+            this.chkAuto = new System.Windows.Forms.CheckBox();
             this.pnlCon.SuspendLayout();
             this.gbCodeClass.SuspendLayout();
             this.SuspendLayout();
@@ -79,6 +80,7 @@
             // 
             // pnlCon
             // 
+            this.pnlCon.Controls.Add(this.chkAuto);
             this.pnlCon.Controls.Add(this.cbIsDynamic);
             this.pnlCon.Controls.Add(this.btnCopy);
             this.pnlCon.Controls.Add(this.txtCode);
@@ -97,8 +99,6 @@
             // cbIsDynamic
             // 
             this.cbIsDynamic.AutoSize = true;
-            this.cbIsDynamic.Checked = true;
-            this.cbIsDynamic.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cbIsDynamic.Location = new System.Drawing.Point(12, 267);
             this.cbIsDynamic.Name = "cbIsDynamic";
             this.cbIsDynamic.Size = new System.Drawing.Size(169, 17);
@@ -152,7 +152,7 @@
             this.rbPre.Checked = true;
             this.rbPre.Location = new System.Drawing.Point(6, 21);
             this.rbPre.Name = "rbPre";
-            this.rbPre.Size = new System.Drawing.Size(106, 17);
+            this.rbPre.Size = new System.Drawing.Size(114, 17);
             this.rbPre.TabIndex = 4;
             this.rbPre.TabStop = true;
             this.rbPre.Text = "use <Pre></Pre>";
@@ -163,7 +163,7 @@
             this.rbCDATA.AutoSize = true;
             this.rbCDATA.Location = new System.Drawing.Point(6, 44);
             this.rbCDATA.Name = "rbCDATA";
-            this.rbCDATA.Size = new System.Drawing.Size(102, 17);
+            this.rbCDATA.Size = new System.Drawing.Size(101, 17);
             this.rbCDATA.TabIndex = 5;
             this.rbCDATA.Text = "use ![CDATA[..]]";
             this.rbCDATA.UseVisualStyleBackColor = true;
@@ -232,6 +232,18 @@
             this.txtGN.TabIndex = 12;
             this.txtGN.Text = "http://garyngzhongbo.blogspot.com/";
             // 
+            // chkAuto
+            // 
+            this.chkAuto.AutoSize = true;
+            this.chkAuto.Checked = true;
+            this.chkAuto.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkAuto.Location = new System.Drawing.Point(187, 267);
+            this.chkAuto.Name = "chkAuto";
+            this.chkAuto.Size = new System.Drawing.Size(148, 17);
+            this.chkAuto.TabIndex = 10;
+            this.chkAuto.Text = "Auto Copy to Clipboard";
+            this.chkAuto.UseVisualStyleBackColor = true;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -273,6 +285,7 @@
         private System.Windows.Forms.CheckBox cbIsDynamic;
         private System.Windows.Forms.TextBox txtSH;
         private System.Windows.Forms.TextBox txtGN;
+        private System.Windows.Forms.CheckBox chkAuto;
     }
 }
 
